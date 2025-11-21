@@ -87,7 +87,7 @@ ol {
   margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 122%;
 }
 
 .visually-hidden {
@@ -113,21 +113,21 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 1px;
 }
 
 .search-form__textfield {
   width: 225px;
-  border-top: 1px solid #fff;
+  border-top: 1px solid currentColor;
   border-right: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid currentColor;
   border-left: none;
   padding: 2px 0;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
-  line-height: 22px;
+  line-height: 122%;
   background-color: transparent;
   appearance: none;
 }
@@ -149,7 +149,7 @@ ol {
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 1px;
 }
 
@@ -159,7 +159,7 @@ ol {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: #fff;
+  background-color: currentColor;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -167,12 +167,12 @@ ol {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: inherit;
   font-family: inherit;
   font-weight: 700;
   font-size: inherit;
-  line-height: 22px;
+  line-height: 122%;
   text-align: center;
   background-color: transparent;
   cursor: pointer;
@@ -193,19 +193,19 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 1px;
 }
 
 .search-form__submit-button {
   align-self: end;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
 }
 
 .more-button {
   width: 100%;
-  height: 34px;
+  min-height: 34px;
   padding: 6px 0;
 }
 
@@ -232,6 +232,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
+  padding: 2px 3px;
   overflow: auto;
 }
 
@@ -239,10 +240,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.content__list-item {
-  padding: 0 3px;
 }
 
 .content__card-link {
@@ -270,7 +267,7 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
 }
 
 .content__video-card {
